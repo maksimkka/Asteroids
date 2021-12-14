@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HitHandler
 {
-
     public void Hit(AmmoType ammoType, Collider2D collision)
     {
         BigAsteroid bigAsteroid = collision.GetComponent<BigAsteroid>();
@@ -29,8 +28,6 @@ public class HitHandler
                 HitUfo(ufo);
                 break;
         }
-
-        //return collision;
     }
 
     private void HitBigAsteroid(BigAsteroid bigAsteroid)

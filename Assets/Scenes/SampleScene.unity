@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16494115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16494117}
+  - component: {fileID: 16494116}
+  m_Layer: 0
+  m_Name: TimeSpawnUFO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &16494116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16494115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676bdae47fb4c4dd2a30f832ca33a484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpawnTime: 15
+  maxSpawnTime: 25
+--- !u!4 &16494117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16494115}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1484115421}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &69894123
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,10 +393,10 @@ GameObject:
   - component: {fileID: 263947618}
   - component: {fileID: 263947617}
   - component: {fileID: 263947620}
-  - component: {fileID: 263947621}
   - component: {fileID: 263947619}
   - component: {fileID: 263947616}
   - component: {fileID: 263947622}
+  - component: {fileID: 263947621}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -489,7 +534,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 263947615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 146e32bc7a9864ea3b7d12d59dc539ae, type: 3}
+  m_Script: {fileID: 11500000, guid: be4724a76227748ce90f2b3cb4ec1e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!60 &263947622
@@ -499,7 +544,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263947615}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1315,6 +1360,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &866166361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866166363}
+  - component: {fileID: 866166362}
+  m_Layer: 0
+  m_Name: TimeSpawnAsteroids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &866166362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866166361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676bdae47fb4c4dd2a30f832ca33a484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpawnTime: 3
+  maxSpawnTime: 7
+--- !u!4 &866166363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866166361}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1484115421}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991239130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,17 +1799,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69f2d55f0cc241a1a3ef4b31b499b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObject:
-  - {fileID: 8572372539159364756, guid: d6180c70ebe304dd594516269b9acb4c, type: 3}
-  - {fileID: 1236351948966785613, guid: 4a8198cdbc36a4762a9f8f10031eaad3, type: 3}
-  - {fileID: 4478181352743249947, guid: ebbed5699857648b9b019d249f5caef8, type: 3}
-  spawnersPosition:
+  spawnObjects:
+  - {fileID: 8572372539159364757, guid: d6180c70ebe304dd594516269b9acb4c, type: 3}
+  - {fileID: 8489298418248329046, guid: 4a8198cdbc36a4762a9f8f10031eaad3, type: 3}
+  - {fileID: 5060698031478191273, guid: ebbed5699857648b9b019d249f5caef8, type: 3}
+  spawnersPositions:
   - {fileID: 1300129336}
   - {fileID: 1990445025}
   - {fileID: 499291264}
   - {fileID: 1710272607}
-  minSpawnTime: 2
-  maxSpawnTime: 5
+  repeatableTimer: {fileID: 866166362}
 --- !u!4 &1218691866
 Transform:
   m_ObjectHideFlags: 0
@@ -1750,15 +1839,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31727ff8370d843bbb408c1c172b0270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObject:
-  - {fileID: 5737489781239289157, guid: dfb9215f775f1411eb6b877aea7c3b16, type: 3}
-  spawnersPosition:
+  spawnObjects:
+  - {fileID: 5737489781239289154, guid: dfb9215f775f1411eb6b877aea7c3b16, type: 3}
+  spawnersPositions:
   - {fileID: 1300129336}
   - {fileID: 1990445025}
   - {fileID: 499291264}
   - {fileID: 1710272607}
-  minSpawnTime: 4
-  maxSpawnTime: 6
+  repeatableTimer: {fileID: 16494116}
 --- !u!1 &1222104471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,7 +2073,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnerLeft
   m_TagString: Untagged
-  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2289,6 +2377,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1484115420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484115421}
+  m_Layer: 0
+  m_Name: TimeSpawnObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1484115421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484115420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 16494117}
+  - {fileID: 866166363}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562134061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,12 +2800,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammo: {fileID: 2267038483668849, guid: 35977220ca27a4c0dad21d8a455347b6, type: 3}
   shotDir: {fileID: 1770121186}
-  startTime: 5
+  startTime: 3
   countLaserText: {fileID: 991239132}
   cooldownText: {fileID: 2002218761}
   currentLaser: 10
   maxLaser: 10
-  laserCooldown: 10
+  laserCooldown: 6
 --- !u!1 &1784615611
 GameObject:
   m_ObjectHideFlags: 0

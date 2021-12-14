@@ -14,7 +14,7 @@ public class PlayerSpeed
         this.maxSpeed = maxSpeed;
     }
 
-    public float SpeedIncrease(float moveForvard)
+    public float IncreaseSpeed(float moveForvard)
     {
         if (moveForvard > 0 && scaledMoveSpeed < maxSpeed)
         {

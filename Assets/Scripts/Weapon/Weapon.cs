@@ -8,8 +8,9 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] protected GameObject ammo;
     [SerializeField] protected Transform shotDir;
     [SerializeField] protected float startTime;
-    protected float timeShot;
+
     protected PlayerInput input;
+    protected float timeShot;
 
     protected abstract void Awake();
     protected abstract void Update();
@@ -27,7 +28,7 @@ public abstract class Weapon : MonoBehaviour
 
     protected void TimerShot()
     {
-        if (timeShot >= 0)
+        if(timeShot >= 0)
         {
             timeShot -= Time.deltaTime;
             if (timeShot <= 0)

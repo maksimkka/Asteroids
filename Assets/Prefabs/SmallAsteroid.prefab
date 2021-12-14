@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b43ba3cfb9d4dfdab19822009fe194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   scoreCount: 10
   boomParticle: {fileID: 5649744664425827405, guid: 10420399743c241af9ea5305dd622061, type: 3}
 --- !u!114 &5984213236803038954
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 806282583896423958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 146e32bc7a9864ea3b7d12d59dc539ae, type: 3}
+  m_Script: {fileID: 11500000, guid: be4724a76227748ce90f2b3cb4ec1e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!60 &7629149081969767933

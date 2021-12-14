@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransformObject : MonoBehaviour
+public class TeleportObject : MonoBehaviour
 {
     private const float maxX = 9;
     private const float minX = -9;
@@ -11,10 +11,10 @@ public class TransformObject : MonoBehaviour
 
     private void Update()
     {
-        HorizontalTeleport();
+        TeleportObjects();
     }
 
-    private void HorizontalTeleport()
+    private void TeleportObjects()
     {
         if (transform.position.x > maxX)
         {

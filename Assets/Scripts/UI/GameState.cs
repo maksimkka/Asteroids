@@ -14,17 +14,15 @@ public class GameState : MonoBehaviour, IGameOver
 
     public void GameOver()
     {
-        StartGame.isStart = false;
+        StartGame.isStarted = false;
         gameOverCanvas.SetActive(true);
         Time.timeScale = 0;
     }
 
     public void RestartGame()
     {
-        StartGame.isStart = true;
+        StartGame.isStarted = true;
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
     }
-
-
 }

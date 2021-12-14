@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    private int countScore;
     [SerializeField] private Text scoreText;
+    private int countScore;
 
     private void Start()
     {

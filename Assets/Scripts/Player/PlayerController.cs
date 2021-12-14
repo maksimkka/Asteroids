@@ -12,21 +12,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject nozzleShip;
     [SerializeField] private GameState gameState;
 
-    private IGameOver gameOver;
-
-    private float scaledMoveSpeed;
-
     private PlayerSpeed playerSpeed;
     private PlayerInput input;
     private GetInfoPlayer infoPlayer;
 
+    private IGameOver gameOver;
+
+    private float scaledMoveSpeed;
+
     private void Awake()
     {
+        input = new PlayerInput();
         playerSpeed = new PlayerSpeed(moveSpeed, maxSpeed);
         gameOver = gameState.GetComponent<IGameOver>();
-
         infoPlayer = GetComponent<GetInfoPlayer>();
-        input = new PlayerInput();
     }
 
     private void OnEnable()
@@ -43,7 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         float moveForvard = input.Player.Move.ReadValue<float>();
         float rotation = input.Player.Rotation.ReadValue<float>();
-        scaledMoveSpeed = playerSpeed.SpeedIncrease(moveForvard);
+        scaledMoveSpeed = playerSpeed.IncreaseSpeed(moveForvard);
 
         Move(scaledMoveSpeed);
         SetActiveNozzleFire(moveForvard);

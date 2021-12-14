@@ -34,7 +34,7 @@ public class LaserGun : Weapon
 
     protected override void Shot()
     {
-        if (!StartGame.isStart) return;
+        if (!StartGame.isStarted) return;
         if (timeShot > 0) return;
 
         if (currentLaser > 0 && currentLaser <= maxLaser)

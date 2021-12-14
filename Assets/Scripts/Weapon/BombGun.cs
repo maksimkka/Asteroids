@@ -12,7 +12,7 @@ public class BombGun : Weapon
 
     protected override void Shot()
     {
-        if (!StartGame.isStart) return;
+        if (!StartGame.isStarted) return;
 
         if (timeShot <= 0)
         {

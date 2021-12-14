@@ -6,7 +6,6 @@ public class BigAsteroid : Enemy
 {
     [SerializeField] private GameObject smallAsteroid;
 
-
     public void CreateSmaalAsteroid()
     {
         Instantiate(smallAsteroid, gameObject.transform.position, Quaternion.identity);

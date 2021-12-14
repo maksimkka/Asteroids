@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8572372539159364758}
   - component: {fileID: 6007017571835780133}
   - component: {fileID: 8572372539159364757}
-  - component: {fileID: 5682909648852872333}
   - component: {fileID: 6580147174026946460}
   m_Layer: 0
   m_Name: BigAsteroid1
@@ -124,18 +123,6 @@ MonoBehaviour:
   scoreCount: 5
   boomParticle: {fileID: 5649744664425827405, guid: 10420399743c241af9ea5305dd622061, type: 3}
   smallAsteroid: {fileID: 806282583896423958, guid: 3349c4d6c2d514fa88efcd2b186a0bc3, type: 3}
---- !u!114 &5682909648852872333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8572372539159364756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 146e32bc7a9864ea3b7d12d59dc539ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &6580147174026946460
 PolygonCollider2D:
   m_ObjectHideFlags: 0
